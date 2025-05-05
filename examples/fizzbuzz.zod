@@ -1,0 +1,32 @@
+// FizzBuzz Program in Zodiac language
+func main() {
+    print("FizzBuzz Program");
+    print("---------------");
+    
+    var limit: String = input("Enter the maximum number: ");
+    var max: Int = parseInt(limit);
+    
+    runFizzBuzz(max);
+}
+
+func parseInt(str: String) -> Int {
+    // Simple parsing function (in real implementation, this would convert string to int)
+    // For simplicity, we'll use the interpreter's native conversion
+    return str;
+}
+
+func runFizzBuzz(max: Int) {
+    for (var i = 1; i <= max; i = i + 1) {
+        if (i % 15 == 0) {
+            print("FizzBuzz");
+        } else if (i % 3 == 0) {
+            print("Fizz");
+        } else if (i % 5 == 0) {
+            print("Buzz");
+        } else {
+            print(i);
+        }
+    }
+}
+
+main();

@@ -1,0 +1,10 @@
+// Basic Zodiac Summary Program
+func main() {
+    var firstName: String = input("First Name: ");
+    var birthDate: String = input("Birthdate (YYYY-MM-DD): ");
+    var sign: String = getZodiac(birthDate);
+    
+    print("Hello " + firstName + ", your zodiac sign is " + sign + "!");
+}
+
+main();

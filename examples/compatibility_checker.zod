@@ -1,0 +1,64 @@
+// Zodiac Compatibility Checker Program
+func main() {
+    print("Zodiac Compatibility Checker");
+    print("---------------------------");
+    
+    var name1: String = input("First person's name: ");
+    var date1: String = input("First person's birthdate (YYYY-MM-DD): ");
+    var sign1: String = getZodiac(date1);
+    
+    var name2: String = input("Second person's name: ");
+    var date2: String = input("Second person's birthdate (YYYY-MM-DD): ");
+    var sign2: String = getZodiac(date2);
+    
+    print("\nResults:");
+    print(name1 + "'s sign is " + sign1);
+    print(name2 + "'s sign is " + sign2);
+    
+    var compatibility: String = checkCompatibility(sign1, sign2);
+    print("\nCompatibility Rating: " + compatibility);
+}
+
+func checkCompatibility(sign1: String, sign2: String) -> String {
+    // Fire signs
+    if ((sign1 == "Aries" || sign1 == "Leo" || sign1 == "Sagittarius") && 
+        (sign2 == "Aries" || sign2 == "Leo" || sign2 == "Sagittarius")) {
+        return "Excellent - Fire and Fire create passion and excitement!";
+    }
+    
+    // Earth signs
+    if ((sign1 == "Taurus" || sign1 == "Virgo" || sign1 == "Capricorn") && 
+        (sign2 == "Taurus" || sign2 == "Virgo" || sign2 == "Capricorn")) {
+        return "Excellent - Earth and Earth create stability and security!";
+    }
+    
+    // Air signs
+    if ((sign1 == "Gemini" || sign1 == "Libra" || sign1 == "Aquarius") && 
+        (sign2 == "Gemini" || sign2 == "Libra" || sign2 == "Aquarius")) {
+        return "Excellent - Air and Air create intellectual stimulation!";
+    }
+    
+    // Water signs
+    if ((sign1 == "Cancer" || sign1 == "Scorpio" || sign1 == "Pisces") && 
+        (sign2 == "Cancer" || sign2 == "Scorpio" || sign2 == "Pisces")) {
+        return "Excellent - Water and Water create emotional harmony!";
+    }
+    
+    // Fire and Air
+    if ((sign1 == "Aries" || sign1 == "Leo" || sign1 == "Sagittarius") && 
+        (sign2 == "Gemini" || sign2 == "Libra" || sign2 == "Aquarius")) {
+        return "Good - Fire and Air create excitement and communication!";
+    }
+    
+    if ((sign1 == "Gemini" || sign1 == "Libra" || sign1 == "Aquarius") && 
+        (sign2 == "Aries" || sign2 == "Leo" || sign2 == "Sagittarius")) {
+        return "Good - Air and Fire create excitement and communication!";
+    }
+    
+    // Earth and Water
+    if ((sign1 == "Taurus" || sign1 == "Virgo" || sign1 == "Capricorn") && 
+        (sign2 == "Cancer" || sign2 == "Scorpio" || sign2 == "Pisces")) {
+        return "Good - Earth and Water create nurturing and stability!";
+    }
+    
+    }

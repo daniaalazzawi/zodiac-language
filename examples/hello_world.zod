@@ -1,0 +1,6 @@
+// Hello World Program in Zodiac language
+func main() {
+    print("Welcome to Zodiac Programming Language!");
+}
+
+main();

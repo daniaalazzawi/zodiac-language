@@ -1,0 +1,8 @@
+// Detailed Personality Report Program
+func main() {
+    var info = collectUserInfo(); // Collects user information: name, date, time, region, gender
+    var report = generateReport(info); // Generates a detailed zodiac report based on user info
+    print(report);
+}
+
+main();
