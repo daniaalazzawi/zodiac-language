@@ -13,7 +13,7 @@
             --text-color: #333;
             --code-bg: #f1f1f1;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -23,7 +23,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -34,13 +34,13 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
-        
+
         header {
             text-align: center;
             padding: 1rem;
             margin-bottom: 2rem;
         }
-        
+
         h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
@@ -49,20 +49,20 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .subtitle {
             font-size: 1.2rem;
             color: var(--secondary-color);
             margin-bottom: 1rem;
         }
-        
+
         nav {
             background-color: var(--primary-color);
             padding: 1rem;
             border-radius: 8px;
             margin-bottom: 2rem;
         }
-        
+
         nav ul {
             display: flex;
             justify-content: center;
@@ -70,22 +70,22 @@
             padding: 0;
             margin: 0;
         }
-        
+
         nav ul li {
             margin: 0 1rem;
         }
-        
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
         }
-        
+
         nav ul li a:hover {
             color: var(--accent-color);
         }
-        
+
         section {
             margin-bottom: 3rem;
             padding: 1.5rem;
@@ -93,20 +93,20 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        
+
         h2 {
             color: var(--primary-color);
             border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 0.5rem;
             margin-top: 0;
         }
-        
+
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
         }
-        
+
         .feature-card {
             background-color: #f8f9fa;
             padding: 1.5rem;
@@ -114,16 +114,16 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .feature-card h3 {
             color: var(--secondary-color);
             margin-top: 0;
         }
-        
+
         pre {
             background-color: var(--code-bg);
             padding: 1rem;
@@ -131,12 +131,12 @@
             overflow-x: auto;
             font-family: 'Consolas', 'Monaco', monospace;
         }
-        
+
         code {
             font-family: 'Consolas', 'Monaco', monospace;
             color: var(--primary-color);
         }
-        
+
         .btn {
             display: inline-block;
             background-color: var(--primary-color);
@@ -148,18 +148,18 @@
             font-weight: bold;
             margin-top: 1rem;
         }
-        
+
         .btn:hover {
             background-color: var(--secondary-color);
             transform: translateY(-2px);
         }
-        
+
         .example-tabs {
             display: flex;
             border-bottom: 1px solid #ddd;
             margin-bottom: 1rem;
         }
-        
+
         .tab-btn {
             background: none;
             border: none;
@@ -169,20 +169,20 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-        
+
         .tab-btn.active {
             border-bottom: 2px solid var(--secondary-color);
             color: var(--primary-color);
         }
-        
+
         .tab-content {
             display: none;
         }
-        
+
         .tab-content.active {
             display: block;
         }
-        
+
         footer {
             text-align: center;
             padding: 1.5rem;
@@ -190,37 +190,37 @@
             color: white;
             border-radius: 8px;
         }
-        
+
         .footer-links a {
             color: var(--accent-color);
             margin: 0 10px;
             text-decoration: none;
         }
-        
+
         .footer-links a:hover {
             text-decoration: underline;
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
             }
-            
+
             h1 {
                 font-size: 2rem;
             }
-            
+
             nav ul {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             nav ul li {
                 margin: 0.5rem 0;
             }
-            
+
             .features {
                 grid-template-columns: 1fr;
             }
@@ -233,7 +233,7 @@
             <h1>Zodiac Programming Language</h1>
             <p class="subtitle">A domain-specific language for astrological personality analysis</p>
         </header>
-        
+
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -243,14 +243,14 @@
                 <li><a href="#documentation">Documentation</a></li>
             </ul>
         </nav>
-        
+
         <section id="about">
             <h2>About Zodiac</h2>
             <p>Zodiac is a domain-specific programming language designed specifically for generating personalized zodiac sign summaries based on user-provided birth data. Created by DaniaA, this language simplifies the process of collecting user birth information and outputting structured astrological insights.</p>
             <p>Whether you're building astrology applications, personality analysis dashboards, chatbots, or educational tools, Zodiac provides a clean and intuitive syntax to work with astrological data.</p>
             <a href="#installation" class="btn">Get Started</a>
         </section>
-        
+
         <section id="features">
             <h2>Features</h2>
             <div class="features">
@@ -280,7 +280,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="examples">
             <h2>Code Examples</h2>
             <div class="example-tabs">
@@ -289,7 +289,7 @@
                 <button class="tab-btn" onclick="openTab('detailed-report')">Detailed Report</button>
                 <button class="tab-btn" onclick="openTab('fizzbuzz')">FizzBuzz</button>
             </div>
-            
+
             <div id="hello-world" class="tab-content active">
                 <h3>Hello World</h3>
                 <pre><code>// Hello World Program in Zodiac language
@@ -299,7 +299,7 @@ func main() {
 
 main();</code></pre>
             </div>
-            
+
             <div id="basic-summary" class="tab-content">
                 <h3>Basic Zodiac Summary</h3>
                 <pre><code>// Basic Zodiac Summary Program
@@ -307,13 +307,13 @@ func main() {
     var firstName: String = input("First Name: ");
     var birthDate: String = input("Birthdate (YYYY-MM-DD): ");
     var sign: String = getZodiac(birthDate);
-    
+
     print("Hello " + firstName + ", your zodiac sign is " + sign + "!");
 }
 
 main();</code></pre>
             </div>
-            
+
             <div id="detailed-report" class="tab-content">
                 <h3>Detailed Personality Report</h3>
                 <pre><code>// Detailed Personality Report Program
@@ -325,17 +325,17 @@ func main() {
 
 main();</code></pre>
             </div>
-            
+
             <div id="fizzbuzz" class="tab-content">
                 <h3>FizzBuzz Implementation</h3>
                 <pre><code>// FizzBuzz Program in Zodiac language
 func main() {
     print("FizzBuzz Program");
     print("---------------");
-    
+
     var limit: String = input("Enter the maximum number: ");
     var max: Int = parseInt(limit);
-    
+
     runFizzBuzz(max);
 }
 
@@ -361,12 +361,12 @@ func runFizzBuzz(max: Int) {
 main();</code></pre>
             </div>
         </section>
-        
+
         <section id="installation">
             <h2>Installation</h2>
             <p>Getting started with Zodiac is simple:</p>
             <pre><code># Clone the repository
-git clone https://github.com/user/zodiac-language.git
+# (GitHub link removed)
 
 # Navigate to the project directory
 cd zodiac-language
@@ -383,23 +383,22 @@ python run_zodiac.py examples/hello_world.zod</code></pre>
                 <li>PyTZ (for timezone calculations)</li>
             </ul>
         </section>
-        
+
         <section id="documentation">
             <h2>Documentation</h2>
-            <p>Comprehensive documentation is available in the GitHub repository:</p>
+            <p>Comprehensive documentation is included with the project files. You can explore:</p>
             <ul>
                 <li>Language Syntax</li>
                 <li>Standard Library Functions</li>
                 <li>Zodiac Calculations</li>
                 <li>Examples and Tutorials</li>
             </ul>
-            <a href="" target="_blank" class="btn">View on GitHub</a>
         </section>
-        
+
         <footer>
             <p>Zodiac Programming Language &copy; 2025 - Created by DaniaA</p>
             <div class="footer-links">
-                <a href="" target="_blank">GitHub</a>
+                <a href="#examples">Examples</a>
                 <a href="#documentation">Documentation</a>
                 <a href="#about">About</a>
             </div>
@@ -408,19 +407,16 @@ python run_zodiac.py examples/hello_world.zod</code></pre>
 
     <script>
         function openTab(tabName) {
-            // Hide all tab content
             var tabContents = document.getElementsByClassName('tab-content');
             for (var i = 0; i < tabContents.length; i++) {
                 tabContents[i].classList.remove('active');
             }
-            
-            // Remove active class from all tab buttons
+
             var tabButtons = document.getElementsByClassName('tab-btn');
             for (var i = 0; i < tabButtons.length; i++) {
                 tabButtons[i].classList.remove('active');
             }
-            
-            // Show the selected tab content and mark button as active
+
             document.getElementById(tabName).classList.add('active');
             event.currentTarget.classList.add('active');
         }
